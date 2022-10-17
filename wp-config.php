@@ -1,4 +1,5 @@
 <?php
+
 /**
  * WordPress の基本設定
  *
@@ -56,15 +57,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'XDyLa~8lA+$DaVSqm}>TjU#(]%m(r+t?Er>{|OU49-w,4I+/P]6:}=TT_:jM(C3v');
-define('SECURE_AUTH_KEY',  '|&kkghW-[k^Hb|`IfV&UF3:1SZelH[~nmBijR:S6&+;yPvI3(|%?*|s5G;>=8{}T');
-define('LOGGED_IN_KEY',    'E~EE:n[&sl(${9ld.z;@[v0]`H39;k.{v&&O/r`h-E>v4o<N}_s>yk 3uy@3gFLV');
-define('NONCE_KEY',        ';S{#l<mnN3m)Dzfv{S0BK>8JI;Nfg:Fku<Z^o)?Ihi} f{?u!qL- +z=<V4JW*2w');
-define('AUTH_SALT',        'A+TE}m]/()yoj4L|JD9%W2rIRSs}TB%u-VuBSa6S!;7>b-Lwa:$#pw*aLZyfry_k');
-define('SECURE_AUTH_SALT', 'p({*x.*:q|Jj!@#UT=S^@{Y[q-1Y;-Ml`h7kh{#<{.My[iShFE_a_Q<kFj~?~0qw');
-define('LOGGED_IN_SALT',   'C@FB-jPJrBS[!88a||JsLCT,w0zU|6c*6:/:mb-]T[K{Aj[,mt#PZ6[`Pt-aUj7>');
-define('NONCE_SALT',       'MKrxwBR>rd$~6XNk=- ISpASJI-Ogr%%b^[UVS+y+nV/c.%^jkKV:hH Nx#,[{+D');
-
+define('AUTH_KEY',         'Rx?(6w><lxrcFK-FT#F.TM;%`}>=WCE%R!b(O]~uv#=.]6=5Rw|FjvNJXUqZ*+9`');
+define('SECURE_AUTH_KEY',  '!ilmz80RfUMp1zuSPvn->zKvJFar;pzz{9&1H,dIWcI3O+yh+/cSRI{c:f6}tG<x');
+define('LOGGED_IN_KEY',    'j73fgz.Q:gSCjopVVEzQz|zz3O+/|Gxu}Ur2x~yjd[W9`]M~aAhgd~C-vQCyO$xb');
+define('NONCE_KEY',        '#^T7Q$Vr.#xF*h^smc4glJ)~p0ylRSwp;ez4hx.cC>{DZ|y^Cp+q0t4NOHV3TKf(');
+define('AUTH_SALT',        'j!:IKT-T,*/m+)DpD5`@?e<-A<:Q4.CNtu$Ri4lynC(dJ@8a|]Agb*bAY(VmG|ST');
+define('SECURE_AUTH_SALT', 'UFV+3Ow8<f?ZYAFHr)Q8m|Sb:Kk8*s!%M&%;ndd:-Zor!{UR._,<rbqvqDFj7tMM');
+define('LOGGED_IN_SALT',   '4u[2K-L~^}& x$c|E-]}}xd5KmVq]gH[@%g+v-S[ck8!h-,.7<=G*:Wqr~6N{]&v');
+define('NONCE_SALT',       '#Fk?H=Fm]lXCqCc3~:B( LHm>0mu6g~6.hYcL?I0[5UCMTN(->YV@3!Ki8EW-*mD');
 /**#@-*/
 
 /**
@@ -85,7 +85,7 @@ $table_prefix = 'wp_';
  *
  * @link https://ja.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 /* カスタム値は、この行と「編集が必要なのはここまでです」の行の間に追加してください。 */
 
@@ -94,8 +94,8 @@ define( 'WP_DEBUG', false );
 /* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+	define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
