@@ -1,0 +1,21 @@
+        Order deny,allow
+        Deny from all
+        Allow from 192.168.11.2
+
+	Options -Indexes
+
+      <Files ~ "^\.(htaccess|htpasswd)$">
+        deny from all
+      </Files>
+
+      # BEGIN WordPress
+      <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
+        RewriteRule ^index\.php$ - [L]
+        RewriteRule ^index\.rdf$ /feed/rdf/ [L,R=301]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . /index.php [L]
+        </IfModule >
+      # END WordPress
