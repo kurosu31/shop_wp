@@ -8,11 +8,11 @@
     </h1>
     <?php wp_nav_menu(array(
       'theme_location' => 'main_nav_menu',
-      'container' => '',
+      'container' => false,
       'menu_class' => 'l-menu is-res-menu',
       'add_li_class' => 'l-menu__item', // liタグへclass追加
       'add_a_class' => 'l-menu__link is-link-jump', // aタグへclass追加
-      'item-wrap' => '<ul>%3$s</ul>'
+      /*      'item-wrap' => '<ul>%3$s</ul>' */
     )) ?>
     <div id="is-toggle-sp-menu" class="l-menu__trigger">
       <span class="l-line js-bar-animate is-line-change"></span>
