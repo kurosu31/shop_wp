@@ -1,0 +1,20 @@
+.upload {
+  height: 34px;
+  line-height: 1;
+  margin-top: 15px;
+  width: 100%;
+  background: rgb(246,247,247);
+}
+.btn{
+  border-radius: 5px;
+  color: rgb(34,113,177);
+  border-color: rgb(34, 113, 177);
+  background: rgb(246, 247, 247);
+  vertical-align: top;
+}
+
+.btn:hover{
+  background: rgb(240, 240, 241);
+  border-color: rgb(10, 75, 120);
+  color: rgb(10, 75, 120);
+}
