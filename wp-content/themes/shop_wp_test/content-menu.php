@@ -8,11 +8,11 @@
     </h1>
     <?php wp_nav_menu(array(
       'theme_location' => 'main_nav_menu',
-      'container' => false,
+      'item-wrap' => '<ul>%3$s</ul>',
       'menu_class' => 'l-menu is-res-menu',
       'add_li_class' => 'l-menu__item',
       'add_a_class' => 'l-menu__link is-link-jump',
-      'item-wrap' => '<ul>%3$s</ul>'
+      'container' => false,
 
     )) ?>
     <div id="is-toggle-sp-menu" class="l-menu__trigger">
